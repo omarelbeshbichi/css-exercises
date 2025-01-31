@@ -9,6 +9,10 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(1, 1fr) repeat(1, 3fr);
+  grid-template-rows: repeat(2, 1fr) repeat(1, 5fr) repeat(1, 1fr);
 }
 
 .container div {
@@ -32,10 +36,12 @@ html {
 
 .nav {
   background-color: #642cde;
+  grid-row: 2 / 3;
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-row: 3 / 4;
 }
 
 .article p {
